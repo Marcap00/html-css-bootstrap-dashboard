@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Duck</title>
+        <!-- Font Awesome -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' integrity='sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==' crossorigin='anonymous'/>
         <!-- Bootstrap 5 -->
          <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
         <!-- Style -->
@@ -46,29 +48,132 @@
             <div class="container">
                 <div class="row row-cols-1 g-3">
                     <div class="col col-lg-9">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia incidunt nostrum, odit nam reprehenderit fuga, laboriosam facilis ducimus consequatur explicabo dicta! Fugiat vel necessitatibus perspiciatis nobis corporis quibusdam labore.
-                        Vitae possimus, similique aperiam non incidunt pariatur? Possimus dicta doloremque pariatur impedit maxime ut itaque vitae incidunt, modi vel quibusdam? Deserunt reprehenderit quidem iusto nulla placeat atque tenetur asperiores assumenda!
-                        Ab provident iusto placeat, obcaecati debitis repudiandae illo nesciunt rem laboriosam maiores veritatis eos hic at. Debitis, facere dolor officia repellat vitae exercitationem sequi omnis nam fuga id quam laudantium?
-                        Ab sint, tempore maiores ex tenetur illo. Hic enim, est ipsam voluptatem officiis voluptatum tempora quam voluptas aut maxime at delectus accusamus ut? Esse nam obcaecati iusto atque suscipit alias!
-                        Recusandae distinctio, architecto ab ipsum veniam fugit quaerat. Quasi natus, delectus tempora itaque numquam necessitatibus quaerat at hic eveniet quas fugit minima cumque ducimus perspiciatis, veniam, pariatur eaque harum minus!
-                        Odio eius sapiente pariatur! Quasi inventore numquam quod, unde tempora soluta voluptas et tempore fuga, cum reprehenderit? Cupiditate aliquid hic assumenda delectus, sapiente odit asperiores, non vero, temporibus laudantium voluptate.
-                        Nobis est necessitatibus unde fuga voluptatum. Asperiores ad qui dicta ut magnam velit ea aspernatur. Iste cupiditate eaque quas! Ipsa, obcaecati iusto consequatur earum corrupti voluptatibus. Tempora commodi placeat eaque.
-                        Est omnis nostrum aliquid recusandae eveniet inventore iure ratione praesentium, corporis, exercitationem ex ut eius iste minima doloribus, consequatur at nulla quam sunt obcaecati quia soluta ad! Nihil, alias consequuntur.
-                        Cumque eaque dolor consequatur voluptates nesciunt deleniti corporis quod ullam minima rem blanditiis, sequi a assumenda totam expedita optio fugiat quis fugit quidem quasi at! Minus necessitatibus accusamus sint veritatis?
-                        Consequatur, neque animi? Earum dolor inventore ducimus reprehenderit. Deleniti saepe, voluptatem iste quam perferendis enim, quidem libero laudantium eaque, sit placeat itaque voluptatibus labore sequi suscipit reiciendis aliquid nulla numquam.
+                        <div class="add-book d-flex justify-content-between align-items-center my-4">
+                            <h1 class="fs-2">Catalogo Libri</h1>
+                            <a class="btn btn-primary" href="#" role="button">Aggiungi Libro</a>
+                        </div>
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="w-50">Titolo</th>
+                                <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col" class="text-center">Azioni</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="align-middle">
+                                <td>I pilastri della terra</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>I promessi sposi</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Il signore degli anelli</td>
+                                <td class="d-none d-md-table-cell">18/10/2023</td>
+                                <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Harry Potter e la Pietra Filosofale</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Il codice Da Vinci</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-danger text-white">Non disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Shining</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>La Divina Commedia</td>
+                                <td class="d-none d-md-table-cell">21/09/2023</td>
+                                <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Il Trono Di Spade</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Il mondo di Sofia</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-danger text-white">Non disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Le Cronache di Narnia: il leone, la strega e l'armadio</td>
+                                <td class="d-none d-md-table-cell">25/07/2023</td>
+                                <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>Il piccolo principe</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                              <tr class="align-middle">
+                                <td>La storia infinita</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-pencil fa-sm"></i></button>
+                                    <button type="button" class="btn btn-outline-dark text-body-secondary""><i class="fa-solid fa-trash fa-sm"></i></button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
-                    <div class="col col-lg-3">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti accusantium atque suscipit laudantium fugiat tempora quidem quia ad error quae beatae molestiae quaerat, nisi itaque sed aperiam cumque. Nobis, a.
-                        Inventore vel iusto asperiores voluptatum corporis consequuntur impedit enim nesciunt odit delectus laudantium quia ut non blanditiis, praesentium, neque reiciendis maxime exercitationem explicabo recusandae debitis sequi? At enim suscipit consequatur!
-                        Officiis reprehenderit nostrum, voluptatum culpa obcaecati repellendus officia delectus repudiandae earum assumenda fugiat laborum dolor porro nobis ad nesciunt vel fugit, itaque modi placeat! A itaque exercitationem expedita neque excepturi.
-                        Nesciunt repellat qui facilis obcaecati harum, officia dolores eos vero? Earum magnam adipisci laborum harum asperiores, id iusto aut impedit voluptatibus deserunt est, ipsum optio? Harum officia provident asperiores dolores.
-                        Pariatur, repudiandae reprehenderit. Commodi fugiat, libero eveniet facere adipisci esse. Architecto suscipit fugiat, voluptates possimus odio perferendis, saepe rerum consectetur vitae eius eveniet ullam ab veniam non minus officia beatae!
-                        Consectetur ipsa hic, asperiores ipsum fuga corporis, laboriosam neque ad rem ut vel. Rerum sequi quibusdam itaque impedit aut, quidem deserunt vero, veritatis ipsa provident iure cumque id est mollitia!
-                        Ex officia quam quisquam! Soluta laborum odit consequatur quam temporibus quibusdam perspiciatis modi expedita deleniti, quo, necessitatibus iure minima repudiandae, nulla numquam maxime ullam ipsa inventore mollitia. Debitis, dolorum itaque.
-                        Excepturi, laborum corrupti labore odio cum deserunt rerum nobis eos tempore, et tenetur? Fugiat eaque quod dicta natus, iusto corporis minima porro quo accusantium vitae exercitationem aliquid, sed accusamus distinctio!
-                        Sequi sed, ab debitis sint sapiente blanditiis fuga natus nemo quod inventore accusamus ut eligendi animi. Aspernatur assumenda provident numquam illo ex ipsam quisquam nesciunt, magnam, veniam nobis laborum minima.
-                        Perspiciatis qui sunt ullam quo molestias tenetur corrupti libero culpa consequatur eligendi ad nostrum, nemo, deleniti eos dolor placeat dolore a. Earum deleniti excepturi debitis? Vel iusto earum ut molestias?
-                    </div>
+                    
                 </div>
             </div>
         </main>
