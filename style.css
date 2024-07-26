@@ -1,0 +1,8 @@
+.navbar form ::placeholder {
+    color: #868686;
+} 
+
+
+.navbar img {
+    max-width: 60px;
+}
